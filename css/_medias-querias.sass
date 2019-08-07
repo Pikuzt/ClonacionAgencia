@@ -1,0 +1,41 @@
+/* Con sass podemos definir variables (es importante mencionar que 
+esto tambien es posible en css)*/
+
+
+$sm: 576px
+$md: 768px
+$ls: 992px
+$xlg: 1200px
+
+/*  un mixin nos permite agrupar declaraciones que despues 
+podemos reutilizar en nuestro codigo*/
+/* Podemos  pasar parametros*/
+
+=from($value)
+    @media(min-width: $value+'px')
+        @content
+
+        /* podemos usar mixins sin parametros
+        el simbolo = indica que es un mixin y sm es elnombre que le asignamos*/
+=sm
+    @media(min-width: $sm)
+        @content
+
+=md
+    @media(min-width: $md)
+        @content
+
+=$lg
+    @media(min-width: $lg)
+        @content
+
+=$xlg
+    @media(min-width: $lg)
+        @content
+
+
+
+
+
+
+        

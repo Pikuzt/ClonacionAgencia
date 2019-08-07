@@ -1,0 +1,23 @@
+//herencia
+
+%messege-shared
+    border: 1px solid #ccc
+    padding 10px
+    color #333
+
+    /*usamos lapalabra exteded para heredar de messehe-shared*/
+.message
+    @extend %messege-shared
+
+.message
+    @extend %messege-shared
+    border-color: green
+    color: green
+
+.error
+    @extend %messege-shared
+    border-color: red
+
+.warning
+    @extend %messege-shared
+    border-color: yellow
